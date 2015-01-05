@@ -1,11 +1,13 @@
 ng.ckeditor
 ===========
+CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor.
 
-The best web text editor for everyone [Angular JS]
+<h3>CKEditor values</h3>
+CKEditor is an Open source application, which means it can be modified any way you want. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.
 
 <h3>Dependencies</h3>
 Download make the dependencies of CKEditor + ng-CKEditor and include in your project
-* http://ckeditor.com/
+* http://ckeditor.com/download
 * ng-ckeditor.min.js
 
 <h3>Implementation</h3>
