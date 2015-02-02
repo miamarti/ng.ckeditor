@@ -16,3 +16,8 @@ Download make the dependencies of CKEditor + ng-CKEditor and include in your pro
 Number of typed characters:"></ng-ckeditor>
 ```
 The parameter bind = "HtmlEditor" you are referring to variable $scope.htmlEditor
+
+## Bower install de dependency
+```
+$ bower install ng.ckeditor --save
+```
