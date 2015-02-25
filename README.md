@@ -21,3 +21,10 @@ The parameter bind = "HtmlEditor" you are referring to variable $scope.htmlEdito
 ```
 $ bower install ng.ckeditor --save
 ```
+
+## Model / Controller include
+```
+angular.module('example', ["ng.ckeditor"]).controller('controller', ['$scope', function($scope) {
+  $scope.htmlEditor = '...';
+}]);
+```
