@@ -26,28 +26,3 @@ $ bower install ng.ckeditor --save
 ```
 angular.module('example', ["ng.ckeditor"]);
 ```
-
-## Use in Factory
-```
-angular.factory('sampleService', [ '$http', '$httpFake', function($http, $httpFake) {
-    var sampleService = {};
-    
-    sampleService.getTokens = function() {
-      	return new $httpFake([ {
-      	    token : 'ABC*************ED',
-      	    application : 'AAAAAAA',
-      	    status : true
-      	}, {
-      	    token : 'DEF*************ED',
-      	    application : 'BBBBBBBB',
-      	    status : false
-      	}, {
-      	    token : 'GHI*************ED',
-      	    application : 'CCCCCCCC',
-      	    status : true
-      	} ], false);
-    };
-    
-    return sampleService;
-}]);
-```
