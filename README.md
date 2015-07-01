@@ -2,6 +2,13 @@ ng.ckeditor
 ===========
 CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor.
 
+<p>
+  <img src="https://img.shields.io/badge/ng.ckeditor-release-green.svg">
+  <img src="https://img.shields.io/badge/version-1.0.1-blue.svg">
+  <img src="https://img.shields.io/bower/v/bootstrap.svg">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+</p>
+
 <h3>CKEditor values</h3>
 CKEditor is an Open source application, which means it can be modified any way you want. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.
 
