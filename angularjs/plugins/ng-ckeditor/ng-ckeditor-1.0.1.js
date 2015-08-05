@@ -1,5 +1,7 @@
 /*
  * autor: Miller Augusto S. Martins
+ * editor: Kuan Cao
+ * editor time: 8-5-2015 7.07PM
  * e-mail: miller.augusto@gmail.com
  * github: miamarti
  * */
@@ -37,18 +39,34 @@
 	    if (attrs.skin != undefined) {
 		config.skin = attrs.skin;
 	    }
+		if (attrs.width != undefined) {
+			config.width = attrs.width;
+		}
+		if (attrs.height != undefined) {
+			config.height = attrs.height;
+		}
+		if (attrs.resizeEnabled != undefined) {
+			config.resize_enabled=(attrs.resizeEnabled =="false")?false:true;
+		}
 	    setTimeout(function() {
-		var editor = CKEDITOR.appendTo(attrs.bind, config, '');
+		var editor = CKEDITOR.appendTo(attrs.bind, config, ''),
+			notInitial=true;
 		(editor).on('change', function(evt) {
 		    eval('(function(){ scope.' + attrs.bind + ' = evt.editor.getData(); })()');
 		    if (attrs.msnCount != undefined) {
 			element[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
 		    }
 		});
-		scope.$watch(attrs.bind, function(value) {
-		    editor.setData(value);
+		(editor).on('focus',function(evt){
+			eval('(function(){ editor.setData(scope.' + attrs.bind + ')})()');
 		});
-	    }, 500);
+		scope.$watch(attrs.bind, function(value) {
+			if(value && notInitial){
+				editor.setData( value);
+				notInitial=false;
+			}
+		});
+	    }, 500);1
 	};
 	return {
 	    restrict : 'E',
