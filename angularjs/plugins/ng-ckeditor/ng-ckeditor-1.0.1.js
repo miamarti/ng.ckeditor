@@ -66,7 +66,7 @@
 				notInitial=false;
 			}
 		});
-	    }, 500);1
+	    }, 500);
 	};
 	return {
 	    restrict : 'E',
