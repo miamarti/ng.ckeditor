@@ -21,7 +21,7 @@ Download make the dependencies of CKEditor + ng-CKEditor and include in your pro
 
 <h3>Implementation</h3>
 ```
-<ng-ckeditor ng-model="htmlEditor" skin="bootstrapck" remove-buttons="Image" remove-plugins="iframe,flash,smiley" msn-count="
+<ng-ckeditor ng-model="htmlEditor" skin="moono" remove-buttons="Image" remove-plugins="iframe,flash,smiley" msn-count="
 Number of typed characters:"></ng-ckeditor>
 ```
 The parameter bind = "HtmlEditor" you are referring to variable $scope.htmlEditor
