@@ -24,7 +24,16 @@ Download make the dependencies of CKEditor + ng-CKEditor and include in your pro
 <ng-ckeditor ng-model="htmlEditor" skin="moono" remove-buttons="Image" remove-plugins="iframe,flash,smiley" msn-count="
 Number of typed characters:"></ng-ckeditor>
 ```
-The parameter bind = "HtmlEditor" you are referring to variable $scope.htmlEditor
+
+## Parameters
+
+| Name         | Type    | Dinamic | Mandatory | Description                                                  |
+| ------------ | ------- | ------- | --------- | ------------------------------------------------------------ |
+| ng-model     | String  | True    | True      | Scope of the attribute that will be the model                |
+| ng-change    | Function | false  | false     | Callback function                                            |
+| ng-disabled  | Boolean | true    | false     | Set ckeditor to readOnly                                     |
+| ng-config    | Object  | false   | False     | 
+Receives a json object that is set to configuration object editor. This object must be created in AngularJS the controller and reported to the component. |
 
 ## Bower install de dependency
 ```
