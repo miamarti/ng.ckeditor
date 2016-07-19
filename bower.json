@@ -1,7 +1,7 @@
 {
   "name": "ng-ckeditor",
   "description": "Angular Module for rendering the CKEditor",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "keywords": [
     "ckeditor",
     "WYSIWYG",
