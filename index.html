@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>ng.Ckeditor by miamarti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">ng.Ckeditor</h1>
+      <h2 class="project-tagline">The best web text editor for everyone [Angular JS]</h2>
+      <a href="https://github.com/miamarti/ng.ckeditor" class="btn">View on GitHub</a>
+      <a href="https://github.com/miamarti/ng.ckeditor/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/miamarti/ng.ckeditor/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="ngckeditor" class="anchor" href="#ngckeditor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ng.ckeditor</h1>
+
+<p>CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor.</p>
+
+<p>
+  <a href="https://gitter.im/miamarti/ng.ckeditor?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
+  <a href="https://gitlab.com/miamarti/ng.ckeditor"><img src="https://img.shields.io/badge/gitlab-ng.ckeditor-yellow.svg"></a>
+  <img src="https://img.shields.io/badge/ng.ckeditor-release-green.svg">
+  <img src="https://img.shields.io/badge/version-2.0.0-blue.svg">
+  <img src="https://img.shields.io/bower/v/bootstrap.svg">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+</p>
+
+<h3>
+<a id="ckeditor-values" class="anchor" href="#ckeditor-values" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CKEditor values</h3>
+
+<p>CKEditor is an Open source application, which means it can be modified any way you want. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>Download make the dependencies of CKEditor + ng-CKEditor and include in your project</p>
+
+<ul>
+<li><a href="http://ckeditor.com/download">http://ckeditor.com/download</a></li>
+<li>ng-ckeditor.min.js</li>
+</ul>
+
+<h3>
+<a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h3>
+
+<pre><code>&lt;ng-ckeditor ng-model="htmlEditor" skin="moono" remove-buttons="Image" remove-plugins="iframe,flash,smiley" msn-count="
+Number of typed characters:"&gt;&lt;/ng-ckeditor&gt;
+</code></pre>
+
+<h3>
+<a id="sample" class="anchor" href="#sample" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample</h3>
+
+
+
+<h2>
+<a id="parameters" class="anchor" href="#parameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parameters</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Dinamic</th>
+<th>Mandatory</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ng-model</td>
+<td>String</td>
+<td>true</td>
+<td>true</td>
+<td>Scope of the attribute that will be the model</td>
+</tr>
+<tr>
+<td>ng-change</td>
+<td>Function</td>
+<td>false</td>
+<td>false</td>
+<td>Callback function</td>
+</tr>
+<tr>
+<td>ng-disabled</td>
+<td>Boolean</td>
+<td>true</td>
+<td>false</td>
+<td>Set ckeditor to readOnly</td>
+</tr>
+<tr>
+<td>ng-config</td>
+<td>Object</td>
+<td>false</td>
+<td>false</td>
+<td>Receives a json object that is set to configuration object editor. This object must be created in AngularJS the controller and reported to the component.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="bower-install-de-dependency" class="anchor" href="#bower-install-de-dependency" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bower install de dependency</h2>
+
+<pre><code>$ bower install ng.ckeditor --save
+</code></pre>
+
+<h2>
+<a id="module-angularjs-include" class="anchor" href="#module-angularjs-include" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Module AngularJS include</h2>
+
+<pre><code>angular.module('example', ["ng.ckeditor"]);
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/miamarti/ng.ckeditor">ng.Ckeditor</a> is maintained by <a href="https://github.com/miamarti">miamarti</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
