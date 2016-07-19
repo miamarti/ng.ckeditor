@@ -32,8 +32,7 @@ Number of typed characters:"></ng-ckeditor>
 | ng-model     | String  | True    | True      | Scope of the attribute that will be the model                |
 | ng-change    | Function | false  | false     | Callback function                                            |
 | ng-disabled  | Boolean | true    | false     | Set ckeditor to readOnly                                     |
-| ng-config    | Object  | false   | False     | 
-Receives a json object that is set to configuration object editor. This object must be created in AngularJS the controller and reported to the component. |
+| ng-config    | Object  | false   | False     | Receives a json object that is set to configuration object editor. This object must be created in AngularJS the controller and reported to the component. |
 
 ## Bower install de dependency
 ```
