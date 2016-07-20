@@ -1,5 +1,6 @@
 /*
  * autor: Miller Augusto S. Martins
+ * editor: Kuan Cao
  * e-mail: miller.augusto@gmail.com
  * github: miamarti
  * */
