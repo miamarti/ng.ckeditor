@@ -1,6 +1,5 @@
 /*
  * autor: Miller Augusto S. Martins
- * editor: Kuan Cao
  * e-mail: miller.augusto@gmail.com
  * github: miamarti
  * */
@@ -65,7 +64,6 @@
                 var editor = CKEDITOR.appendTo(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
 
                 var addEventListener = function (editor) {
-                    var interval = undefined;
                     (editor).on('change', function (evt) {
                         scope.$apply(function () {
                             scope.ngModel = evt.editor.getData();
@@ -82,8 +80,8 @@
                     });
                 };
 
+                var interval = undefined;
                 var setValue = function (value, editor) {
-                    var interval = undefined;
                     if (interval) {
                         clearTimeout(interval);
                     }
@@ -93,13 +91,15 @@
                         } else if (editor) {
                             editor.setData('');
                         }
-                    }, 500);
+                    }, 1000);
                 };
 
                 addEventListener(editor);
 
                 scope.$watch('ngModel', function (value) {
-                    setValue(value, editor);
+                    if(value !== editor.getData()){
+                        setValue(value, editor);   
+                    }
                 });
 
                 scope.$watch('ngDisabled', function (value) {
