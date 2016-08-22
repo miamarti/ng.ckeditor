@@ -6,7 +6,7 @@ CKEditor is a ready-for-use HTML text editor designed to simplify web content cr
   <a href="https://gitter.im/miamarti/ng.ckeditor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
   <a href="https://gitlab.com/miamarti/ng.ckeditor" target="_blank"><img src="https://img.shields.io/badge/gitlab-ng.ckeditor-yellow.svg"></a>
   <img src="https://img.shields.io/badge/ng.ckeditor-release-green.svg">
-  <img src="https://img.shields.io/badge/version-2.0.1-blue.svg">
+  <img src="https://img.shields.io/badge/version-2.0.2-blue.svg">
   <img src="https://img.shields.io/bower/v/bootstrap.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
