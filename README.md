@@ -18,6 +18,9 @@ CKEditor is an Open source application, which means it can be modified any way y
 Download make the dependencies of CKEditor + ng-CKEditor and include in your project
 * http://ckeditor.com/download
 * ng-ckeditor.min.js
+ 
+<h3>cdn</h3>
+https://cdnjs.cloudflare.com/ajax/libs/miamarti-ng-ckeditor/2.0.2/ng-ckeditor.min.js
 
 <h3>Implementation</h3>
 ```
