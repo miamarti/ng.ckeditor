@@ -47,3 +47,7 @@ $ bower install ng.ckeditor --save
 ```
 angular.module('example', ["ng.ckeditor"]);
 ```
+
+## Metrics
+
+[![Throughput Graph](https://graphs.waffle.io/miamarti/ng.ckeditor/throughput.svg)](https://waffle.io/miamarti/ng.ckeditor/metrics/throughput)
