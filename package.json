@@ -1,0 +1,21 @@
+{
+  "name": "ng-ckeditor",
+  "description": "Angular Module for rendering the CKEditor",
+  "version": "2.0.2",
+  "keywords": [
+    "ckeditor",
+    "WYSIWYG",
+    "js",
+    "front-end",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miamarti/ng.ckeditor"
+  },
+  "main": "dist/ng-ckeditor.js",
+  "dependencies": {
+    "jquery": ">= 1.9.1",
+    "ckeditor" : "*"
+  }
+}
