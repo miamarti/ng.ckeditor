@@ -23,7 +23,7 @@ Download make the dependencies of CKEditor + ng-CKEditor and include in your pro
 <h3>cdn</h3>
 https://cdnjs.cloudflare.com/ajax/libs/miamarti-ng-ckeditor/2.0.2/ng-ckeditor.min.js
 
-<h3>Implementation</h3>
+## Implementation
 ```
 <ng-ckeditor ng-model="htmlEditor" skin="moono" remove-buttons="Image" remove-plugins="iframe,flash,smiley" msn-count="
 Number of typed characters:"></ng-ckeditor>
