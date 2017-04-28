@@ -1,5 +1,7 @@
 ng.ckeditor
 ===========
+
+[![Join the chat at https://gitter.im/miamarti/ng.ckeditor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/miamarti/ng.ckeditor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor.
 
 <p>
