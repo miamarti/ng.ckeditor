@@ -9,6 +9,7 @@ CKEditor is a ready-for-use HTML text editor designed to simplify web content cr
   <img src="https://img.shields.io/badge/version-2.0.2-blue.svg">
   <img src="https://img.shields.io/bower/v/bootstrap.svg"> 
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+  <a href="https://github.com/miamarti/ng.ckeditor/tarball/master"><img src="https://img.shields.io/github/downloads/atom/atom/latest/total.svg"></a>
   <a href="http://waffle.io/miamarti/ng.ckeditor"><img alt='Stories in Ready' src='https://badge.waffle.io/miamarti/ng.ckeditor.svg?label=ready&title=Ready' height="21" /></a>
 </p>
 
