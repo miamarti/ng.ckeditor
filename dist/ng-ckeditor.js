@@ -6,7 +6,7 @@
 (function (window, document) {
     "use strict";
     (angular.module('ng.ckeditor', ['ng']))
-    .directive('ngCkeditor', function () {
+    .directive('ngCkeditor', ['$timeout', function ($timeout) {
 
         CKEDITOR.on('instanceCreated', function (event) {
             var editor = event.editor,
@@ -78,6 +78,19 @@
                     (editor).on('focus', function (evt) {
                         editor.setData(scope.ngModel);
                     });
+                    (editor).on('key', function (evt) {
+	                    $timeout(function () {
+		                    scope.$apply(function () {
+			                    scope.ngModel = evt.editor.getData();
+		                    });
+		                    if (attrs.msnCount != undefined) {
+			                    element[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
+		                    }
+		                    if(scope.ngChange && typeof scope.ngChange === 'function'){
+			                    scope.ngChange(evt.editor.getData());
+		                    }
+                        }, 0);
+                    });
                 };
 
                 var interval = undefined;
@@ -119,5 +132,5 @@
 
             }
         };
-    });
+    }]);
 })(window, document);
