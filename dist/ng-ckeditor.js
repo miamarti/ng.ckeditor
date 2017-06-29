@@ -110,6 +110,7 @@
                 addEventListener(editor);
 
                 scope.$watch('ngModel', function (value) {
+                    clearTimeout(interval);
                     if(value !== editor.getData()){
                         setValue(value, editor);   
                     }
