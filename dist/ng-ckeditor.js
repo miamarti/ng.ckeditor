@@ -93,26 +93,11 @@
                     });
                 };
 
-                var interval = undefined;
-                var setValue = function (value, editor) {
-                    if (interval) {
-                        clearTimeout(interval);
-                    }
-                    interval = setTimeout(function () {
-                        if (value && editor) {
-                            editor.setData(value);
-                        } else if (editor) {
-                            editor.setData('');
-                        }
-                    }, 1000);
-                };
-
                 addEventListener(editor);
 
                 scope.$watch('ngModel', function (value) {
-                    clearTimeout(interval);
                     if(value !== editor.getData()){
-                        setValue(value, editor);   
+                        editor.setData(value || '');
                     }
                 });
 
