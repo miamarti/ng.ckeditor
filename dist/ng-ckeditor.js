@@ -76,7 +76,9 @@
                         }
                     });
                     (editor).on('focus', function (evt) {
-                        editor.setData(scope.ngModel);
+                        if (scope.ngModel !== editor.getData()) {
+                            editor.setData(scope.ngModel);
+                        }
                     });
                     (editor).on('key', function (evt) {
 	                    $timeout(function () {
