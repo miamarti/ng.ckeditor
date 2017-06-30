@@ -65,7 +65,7 @@
 
                 var addEventListener = function (editor) {
                     (editor).on('change', function (evt) {
-                        scope.$apply(function () {
+                        scope.$evalAsync(function () {
                             scope.ngModel = evt.editor.getData();
                         });
                         if (attrs.msnCount != undefined) {
@@ -80,7 +80,7 @@
                     });
                     (editor).on('key', function (evt) {
 	                    $timeout(function () {
-		                    scope.$apply(function () {
+		                    scope.$evalAsync(function () {
 			                    scope.ngModel = evt.editor.getData();
 		                    });
 		                    if (attrs.msnCount != undefined) {
