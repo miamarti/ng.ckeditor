@@ -65,7 +65,7 @@
 
                 var addEventListener = function (editor) {
                     (editor).on('change', function (evt) {
-                        scope.$evalAsync(function () {
+                        $timeout(function () {
                             scope.ngModel = evt.editor.getData();
                         });
                         if (attrs.msnCount != undefined) {
@@ -82,9 +82,7 @@
                     });
                     (editor).on('key', function (evt) {
 	                    $timeout(function () {
-		                    scope.$evalAsync(function () {
-			                    scope.ngModel = evt.editor.getData();
-		                    });
+		                    scope.ngModel = evt.editor.getData();
 		                    if (attrs.msnCount != undefined) {
 			                    element[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
 		                    }
