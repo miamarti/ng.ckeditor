@@ -65,7 +65,7 @@
 
                 var addEventListener = function (editor) {
                     (editor).on('change', function (evt) {
-                        scope.$apply(function () {
+                        $timeout(function () {
                             scope.ngModel = evt.editor.getData();
                         });
                         if (attrs.msnCount != undefined) {
@@ -76,13 +76,13 @@
                         }
                     });
                     (editor).on('focus', function (evt) {
-                        editor.setData(scope.ngModel);
+                        if (scope.ngModel !== editor.getData()) {
+                            editor.setData(scope.ngModel);
+                        }
                     });
                     (editor).on('key', function (evt) {
 	                    $timeout(function () {
-		                    scope.$apply(function () {
-			                    scope.ngModel = evt.editor.getData();
-		                    });
+		                    scope.ngModel = evt.editor.getData();
 		                    if (attrs.msnCount != undefined) {
 			                    element[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
 		                    }
@@ -93,26 +93,11 @@
                     });
                 };
 
-                var interval = undefined;
-                var setValue = function (value, editor) {
-                    if (interval) {
-                        clearTimeout(interval);
-                    }
-                    interval = setTimeout(function () {
-                        if (value && editor) {
-                            editor.setData(value);
-                        } else if (editor) {
-                            editor.setData('');
-                        }
-                    }, 1000);
-                };
-
                 addEventListener(editor);
 
                 scope.$watch('ngModel', function (value) {
-                    clearTimeout(interval);
                     if(value !== editor.getData()){
-                        setValue(value, editor);   
+                        editor.setData(value || '');
                     }
                 });
 
