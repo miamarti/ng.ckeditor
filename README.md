@@ -23,7 +23,9 @@ Download make the dependencies of CKEditor + ng-CKEditor and include in your pro
  
 <h3>cdn</h3>
 https://cdnjs.cloudflare.com/ajax/libs/ng.ckeditor/2.0.4/ng-ckeditor.min.js
+
 OR
+
 https://cdnjs.cloudflare.com/ajax/libs/ng.ckeditor/2.0.4/ng-ckeditor.js
 
 ## Implementation
