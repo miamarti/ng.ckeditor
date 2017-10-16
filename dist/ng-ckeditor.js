@@ -68,8 +68,8 @@
                         $timeout(function () {
                             scope.ngModel = evt.editor.getData();
                         });
-                        if (attrs.msnCount != undefined) {
-                            element[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
+                        if (elem && attrs.msnCount !== undefined) {
+                            elem[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
                         }
                         if(scope.ngChange && typeof scope.ngChange === 'function'){
                             scope.ngChange(evt.editor.getData());
@@ -84,7 +84,7 @@
 	                    $timeout(function () {
 		                    scope.ngModel = evt.editor.getData();
 		                    if (attrs.msnCount != undefined) {
-			                    element[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
+			                    elem[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
 		                    }
 		                    if(scope.ngChange && typeof scope.ngChange === 'function'){
 			                    scope.ngChange(evt.editor.getData());
