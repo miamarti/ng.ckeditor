@@ -81,21 +81,20 @@
                         }
                     });
                     (editor).on( 'mode', function(evt) {
-						if ( this.mode == 'source' ) {
-							var editable = evt.editor.editable();
-
-							editable.attachListener( editable, 'input', function() {
-								// Handle changes made in the source mode.
-								scope.ngModel = editor.getData();
-								if (elem && attrs.msnCount !== undefined) {
-									elem[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
-								}
-								if(scope.ngChange && typeof scope.ngChange === 'function'){
-									scope.ngChange(evt.editor.getData());
-								}
-							});
-						}
-						});
+                        if ( this.mode == 'source' ) {
+                            var editable = evt.editor.editable();
+                            editable.attachListener( editable, 'input', function() {
+                                // Handle changes made in the source mode.
+                                scope.ngModel = editor.getData();
+                                if (elem && attrs.msnCount !== undefined) {
+                                    elem[0].querySelector('.totalTypedCharacters').innerHTML = attrs.msnCount + " " + evt.editor.getData().length;
+                                }
+                                if(scope.ngChange && typeof scope.ngChange === 'function'){
+                                    scope.ngChange(evt.editor.getData());
+                                }
+                            });
+                        }
+                        });
                 };
 
                 addEventListener(editor);
