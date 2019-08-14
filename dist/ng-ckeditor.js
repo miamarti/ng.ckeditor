@@ -215,9 +215,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 editor = __WEBPACK_IMPORTED_MODULE_1_ckeditor___default.a.appendTo(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
                 addEventListener(editor);
                 editor.setData(scope.ngModel);
-
             });
-
         }
     };
 }])

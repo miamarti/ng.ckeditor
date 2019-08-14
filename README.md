@@ -6,7 +6,7 @@ CKEditor is a ready-for-use HTML text editor designed to simplify web content cr
   <a href="https://gitter.im/miamarti/ng.ckeditor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
   <a href="https://gitlab.com/miamarti/ng.ckeditor" target="_blank"><img src="https://img.shields.io/badge/gitlab-ng.ckeditor-yellow.svg"></a>
   <img src="https://img.shields.io/badge/ng.ckeditor-release-green.svg">
-  <img src="https://img.shields.io/badge/version-2.0.4-blue.svg">
+  <img src="https://img.shields.io/badge/version-2.0.5-blue.svg">
   <img src="https://img.shields.io/bower/v/bootstrap.svg"> 
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
   <a href="https://github.com/miamarti/ng.ckeditor/tarball/master"><img src="https://img.shields.io/github/downloads/atom/atom/latest/total.svg"></a>
@@ -22,7 +22,8 @@ Download make the dependencies of CKEditor + ng-CKEditor and include in your pro
 * ng-ckeditor.min.js
  
 <h3>cdn</h3>
-https://cdnjs.cloudflare.com/ajax/libs/miamarti-ng-ckeditor/2.0.2/ng-ckeditor.min.js
+https://cdnjs.cloudflare.com/ajax/libs/ng.ckeditor/2.0.4/ng-ckeditor.min.js
+https://cdnjs.cloudflare.com/ajax/libs/ng.ckeditor/2.0.4/ng-ckeditor.js
 
 ## Implementation
 ```html
