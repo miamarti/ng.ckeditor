@@ -14,8 +14,16 @@
     "url": "https://github.com/miamarti/ng.ckeditor"
   },
   "main": "dist/ng-ckeditor.js",
+  "module": "src/index.js",
   "dependencies": {
-    "jquery": ">= 1.9.1",
-    "ckeditor" : "*"
+    "ckeditor": "*",
+    "jquery": ">= 1.9.1"
+  },
+  "devDependencies": {
+    "angular": "^1.6.5",
+    "webpack": "^3.3.0"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }

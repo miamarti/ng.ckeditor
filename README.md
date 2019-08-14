@@ -26,7 +26,7 @@ https://cdnjs.cloudflare.com/ajax/libs/ng.ckeditor/2.0.4/ng-ckeditor.min.js
 https://cdnjs.cloudflare.com/ajax/libs/ng.ckeditor/2.0.4/ng-ckeditor.js
 
 ## Implementation
-```
+```html
 <ng-ckeditor ng-model="htmlEditor" skin="moono" remove-buttons="Image" remove-plugins="iframe,flash,smiley" msn-count="
 Number of typed characters:"></ng-ckeditor>
 ```
@@ -41,13 +41,29 @@ Number of typed characters:"></ng-ckeditor>
 | ng-config    | Object  | false   | false     | Receives a json object that is set to configuration object editor. This object must be created in AngularJS the controller and reported to the component. |
 
 ## Bower install de dependency
-```
+```bash
 $ bower install ng.ckeditor --save
 ```
 
 ## Module AngularJS include
-```
+```javascript
 angular.module('example', ["ng.ckeditor"]);
+```
+
+## ES2015 Module include
+```javascript
+import ng_ckeditor from 'ng-ckeditor';
+
+angular.module('example', [ng_ckeditor]);
+```
+
+## Contributing
+
+How to build:
+
+```bash
+npm install
+npm run build
 ```
 
 ## Metrics
